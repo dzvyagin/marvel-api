@@ -1,10 +1,12 @@
 import { Component } from 'react';
 import ErrorMessage from '../errorMessage/ErrorMessage';
+import PropTypes from 'prop-types';
 
 class ErrorBoundary extends Component {
-  state = {
-    error: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = { error: false };
+  }
 
   componentDidCatch(error, errorInfo) {
     console.log(error, errorInfo);
@@ -21,5 +23,9 @@ class ErrorBoundary extends Component {
     return this.props.children;
   }
 }
+
+ErrorBoundary.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired
+};
 
 export default ErrorBoundary;

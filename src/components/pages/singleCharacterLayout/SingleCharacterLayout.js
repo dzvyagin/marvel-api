@@ -1,5 +1,6 @@
 import './singleCharacterLayout.scss';
 import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
 
 const SingleCharacterLayout = ({ data }) => {
   const { name, description, thumbnail } = data;
@@ -17,6 +18,14 @@ const SingleCharacterLayout = ({ data }) => {
       </div>
     </div>
   );
+};
+
+SingleCharacterLayout.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    thumbnail: PropTypes.string
+  })
 };
 
 export default SingleCharacterLayout;

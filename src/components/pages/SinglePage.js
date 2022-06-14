@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import useMarvelService from '../../services/MarvelService';
 import AppBanner from '../appBanner/AppBanner';
@@ -44,6 +45,11 @@ const SinglePage = ({ Component, dataType }) => {
       {setContent(process, Component, data)}
     </>
   );
+};
+
+SinglePage.propTypes = {
+  dataType: PropTypes.string,
+  Component: PropTypes.elementType.isRequired
 };
 
 export default SinglePage;

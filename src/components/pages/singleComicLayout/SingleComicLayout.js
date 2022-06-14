@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import PropTypes from 'prop-types';
 
 import './singleComicLayout.scss';
 
@@ -25,6 +26,17 @@ const SingleComicLayout = ({ data }) => {
       </Link>
     </div>
   );
+};
+
+SingleComicLayout.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+    pageCount: PropTypes.string,
+    thumbnail: PropTypes.string,
+    language: PropTypes.string,
+    price: PropTypes.string
+  })
 };
 
 export default SingleComicLayout;

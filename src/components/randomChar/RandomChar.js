@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import useMarvelService from '../../services/MarvelService';
 import setContent from '../../utils/setContent';
 
@@ -74,6 +76,16 @@ const View = ({ data }) => {
       </div>
     </div>
   );
+};
+
+View.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    homepage: PropTypes.string,
+    thumbnail: PropTypes.string,
+    wiki: PropTypes.string
+  })
 };
 
 export default RandomChar;

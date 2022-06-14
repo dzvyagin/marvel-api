@@ -82,4 +82,19 @@ CharInfo.propTypes = {
   charId: PropTypes.number
 };
 
+View.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    thumbnail: PropTypes.string,
+    homepage: PropTypes.string,
+    wiki: PropTypes.string,
+    comics: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string
+      })
+    )
+  })
+};
+
 export default CharInfo;

@@ -79,7 +79,7 @@ const View = (props) => {
 };
 
 CharInfo.propTypes = {
-  charId: PropTypes.number
+  charId: PropTypes.number,
 };
 
 View.propTypes = {
@@ -91,10 +91,10 @@ View.propTypes = {
     wiki: PropTypes.string,
     comics: PropTypes.arrayOf(
       PropTypes.shape({
-        name: PropTypes.string
-      })
-    )
-  })
+        name: PropTypes.string,
+      }),
+    ),
+  }),
 };
 
 export default CharInfo;

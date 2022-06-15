@@ -49,7 +49,7 @@ const SinglePage = ({ Component, dataType }) => {
 
 SinglePage.propTypes = {
   dataType: PropTypes.string,
-  Component: PropTypes.elementType.isRequired
+  Component: PropTypes.elementType.isRequired,
 };
 
 export default SinglePage;

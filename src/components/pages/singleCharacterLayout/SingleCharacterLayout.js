@@ -24,8 +24,8 @@ SingleCharacterLayout.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string,
     description: PropTypes.string,
-    thumbnail: PropTypes.string
-  })
+    thumbnail: PropTypes.string,
+  }),
 };
 
 export default SingleCharacterLayout;

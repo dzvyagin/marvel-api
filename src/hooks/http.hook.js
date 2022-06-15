@@ -22,7 +22,7 @@ export const useHttp = () => {
         throw e;
       }
     },
-    []
+    [],
   );
 
   const clearError = useCallback(() => {

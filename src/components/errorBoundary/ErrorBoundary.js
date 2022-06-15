@@ -11,7 +11,7 @@ class ErrorBoundary extends Component {
   componentDidCatch(error, errorInfo) {
     console.log(error, errorInfo);
     this.setState({
-      error: true
+      error: true,
     });
   }
 
@@ -25,7 +25,7 @@ class ErrorBoundary extends Component {
 }
 
 ErrorBoundary.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
 };
 
 export default ErrorBoundary;

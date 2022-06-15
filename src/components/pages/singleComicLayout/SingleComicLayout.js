@@ -35,8 +35,8 @@ SingleComicLayout.propTypes = {
     pageCount: PropTypes.string,
     thumbnail: PropTypes.string,
     language: PropTypes.string,
-    price: PropTypes.string
-  })
+    price: PropTypes.string,
+  }),
 };
 
 export default SingleComicLayout;

@@ -86,7 +86,8 @@ const CharList = (props) => {
                 props.onCharSelected(item.id);
                 focusOnItem(i);
               }
-            }}>
+            }}
+          >
             <img src={item.thumbnail} alt={item.name} style={imgStyle} />
             <div className="char__name">{item.name}</div>
           </li>
@@ -115,7 +116,8 @@ const CharList = (props) => {
         disabled={newItemLoading}
         style={{ display: charEnded ? 'none' : 'block' }}
         className="button button__main button__long"
-        onClick={() => onRequest(offset)}>
+        onClick={() => onRequest(offset)}
+      >
         <div className="inner">load more</div>
       </button>
     </div>
@@ -123,7 +125,7 @@ const CharList = (props) => {
 };
 
 CharList.propTypes = {
-  onCharSelected: PropTypes.func.isRequired
+  onCharSelected: PropTypes.func.isRequired,
 };
 
 export default CharList;

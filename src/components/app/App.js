@@ -11,7 +11,7 @@ const SingleComicLayout = lazy(() => {
   return import('../pages/singleComicLayout/SingleComicLayout');
 });
 const SingleCharacterLayout = lazy(() =>
-  import('../pages/singleCharacterLayout/SingleCharacterLayout')
+  import('../pages/singleCharacterLayout/SingleCharacterLayout'),
 );
 const SinglePage = lazy(() => import('../pages/SinglePage'));
 

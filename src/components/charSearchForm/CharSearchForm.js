@@ -47,14 +47,15 @@ const CharSearchForm = () => {
     <div className="char__search-form">
       <Formik
         initialValues={{
-          charName: ''
+          charName: '',
         }}
         validationSchema={Yup.object({
-          charName: Yup.string().required('This field is required')
+          charName: Yup.string().required('This field is required'),
         })}
         onSubmit={({ charName }) => {
           updateChar(charName);
-        }}>
+        }}
+      >
         <Form>
           <label className="char__search-label" htmlFor="charName">
             Or find a character by name:

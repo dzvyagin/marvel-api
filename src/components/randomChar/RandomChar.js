@@ -84,8 +84,8 @@ View.propTypes = {
     description: PropTypes.string,
     homepage: PropTypes.string,
     thumbnail: PropTypes.string,
-    wiki: PropTypes.string
-  })
+    wiki: PropTypes.string,
+  }),
 };
 
 export default RandomChar;

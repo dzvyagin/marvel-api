@@ -2,7 +2,7 @@
 
 ##  App overview
 
-The app works with the official <a href="https://developer.marvel.com">Marvel API</a>.  The app provides a user-friendly interface for viewing your favorite characters, searching for them? as well as viewing comic books. The app allows you to see not only a general list of heroes and comics, but also detailed information about each of them. 
+The app works with the official <a href="https://developer.marvel.com">Marvel API</a>.  The app provides a user-friendly interface for viewing your favorite characters, searching for them as well as viewing comic books. The app allows you to see not only a general list of heroes and comics, but also detailed information about each of them. 
 
 ## Stack
 
